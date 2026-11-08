@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+**/node_modules/
+
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
+# Angular
+.angular/
+dist/
+
+# Archivos temporales
+*.log
+.DS_Store
+
+# Sistema operativo
+Thumbs.db

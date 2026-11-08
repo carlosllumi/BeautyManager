@@ -1,0 +1,82 @@
+
+<div class="dashboard">
+
+  <aside class="sidebar">
+    <div class="logo">
+      <span>✦</span>
+      <div>
+        <h2>BeautyManager</h2>
+        <small>ADMINISTRACIÓN</small>
+      </div>
+    </div>
+
+    <p class="menu-title">MENÚ PRINCIPAL</p>
+
+
+<nav>
+  <a routerLink="/" routerLinkActive="active"
+     [routerLinkActiveOptions]="{ exact: true }">
+    ⌂ &nbsp; Inicio
+  </a>
+
+  <a routerLink="/clientes" routerLinkActive="active">
+    ♙ &nbsp; Clientes
+  </a>
+
+  <a>✂ &nbsp; Servicios</a>
+  <a>♧ &nbsp; Empleados</a>
+  <a>▣ &nbsp; Citas</a>
+  <a>◷ &nbsp; Horarios</a>
+  <a>▤ &nbsp; Bloqueos de agenda</a>
+</nav>
+
+
+    <div class="sidebar-footer">
+      BeautyManager © 2026
+    </div>
+  </aside>
+
+  <section class="main-content">
+
+    <header class="topbar">
+      <h3>Panel de administración</h3>
+      <div class="user">Administrador</div>
+    </header>
+
+    <main class="contenido">
+
+      <div class="bienvenida">
+        <span>BIENVENIDO</span>
+        <h1>Panel principal</h1>
+        <p>Gestiona tu peluquería desde un solo lugar.</p>
+      </div>
+
+      <section class="cards">
+
+        <article class="card">
+          <div class="icono">♙</div>
+          <h3>Clientes</h3>
+          <p>Administra la información de tus clientes.</p>
+          <span>Gestionar clientes →</span>
+        </article>
+
+        <article class="card">
+          <div class="icono">✂</div>
+          <h3>Servicios</h3>
+          <p>Controla los servicios y precios.</p>
+          <span>Gestionar servicios →</span>
+        </article>
+
+        <article class="card">
+          <div class="icono">▣</div>
+          <h3>Citas</h3>
+          <p>Organiza las citas de tus clientes.</p>
+          <span>Gestionar citas →</span>
+        </article>
+
+      </section>
+
+    </main>
+
+  </section>
+</div>

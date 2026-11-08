@@ -1,0 +1,178 @@
+
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f7fa;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: #123b68;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-right: 4px solid #c9ad55;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 25px 15px;
+  border-bottom: 1px solid #31577d;
+
+  span {
+    color: #c9ad55;
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 19px;
+    margin: 0;
+  }
+
+  small {
+    color: #e3d49d;
+    font-size: 10px;
+  }
+}
+
+.menu-title {
+  color: #c9ad55;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 25px 20px 10px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0 12px;
+
+  a {
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover, &.active {
+      background: #28547f;
+      border-left: 4px solid #c9ad55;
+    }
+  }
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding: 20px;
+  color: #d5dfeb;
+  font-size: 11px;
+}
+
+.main-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.topbar {
+  background: white;
+  padding: 20px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e6eaf0;
+
+  h3 {
+    color: #123b68;
+  }
+}
+
+.user {
+  background: #123b68;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+}
+
+.contenido {
+  padding: 40px;
+}
+
+.bienvenida {
+  margin-bottom: 35px;
+
+  span {
+    color: #b3973e;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  h1 {
+    color: #123b68;
+    font-size: 30px;
+  }
+
+  p {
+    color: #707b89;
+  }
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border: 1px solid #e6eaf0;
+  border-top: 4px solid #c9ad55;
+  box-shadow: 0 5px 18px rgba(18,59,104,.07);
+
+  h3 {
+    color: #123b68;
+  }
+
+  p {
+    color: #707b89;
+  }
+
+  span {
+    color: #ae9138;
+    font-weight: bold;
+  }
+}
+
+.icono {
+  background: #eaf0f7;
+  color: #123b68;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  font-size: 28px;
+}
+
+@media (max-width: 700px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    width: 190px;
+  }
+
+  .contenido {
+    padding: 20px;
+  }
+}

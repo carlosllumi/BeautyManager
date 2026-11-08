@@ -1,0 +1,94 @@
+
+.clientes-container {
+  padding: 30px;
+  color: #153d68;
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  > p {
+    color: #64748b;
+    margin-bottom: 30px;
+  }
+}
+
+.formulario,
+.tabla-clientes {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border-top: 4px solid #d4af37;
+  margin-bottom: 25px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+  h2 {
+    color: #153d68;
+    margin-bottom: 20px;
+  }
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  label {
+    font-weight: 600;
+    color: #153d68;
+  }
+
+  input {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+  }
+
+  button {
+    background: #153d68;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+
+    &:hover {
+      background: #d4af37;
+      color: #153d68;
+    }
+  }
+}
+
+.tabla-clientes {
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 14px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    th {
+      background: #153d68;
+      color: white;
+    }
+  }
+}
+
+.exito {
+  color: #16803c;
+  margin-top: 15px;
+}
+
+.error {
+  color: #dc2626;
+  margin-top: 15px;
+}
